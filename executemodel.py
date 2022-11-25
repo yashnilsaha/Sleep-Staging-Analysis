@@ -18,10 +18,10 @@ if __name__ == '__main__':
     and the *Hypnogram.edf which contain the annotations of the sleep patterns that correspond to the PSG.
     """
     print(len(sys.argv))
-    if len(sys.argv) == 4:
+    if len(sys.argv) == 3:
         start = time.time()
-        data_file = sys.argv[2]
-        annotations_file = sys.argv[3]
+        data_file = sys.argv[1]
+        annotations_file = sys.argv[2]
 
         sleep_stages_dictionary = {'Sleep stage W': 5, 'Sleep stage 1': 3, 'Sleep stage 2': 2, 'Sleep stage 3': 1,
                                    'Sleep stage 4': 0, 'Sleep stage R': 4, 'Movement time': 6}
